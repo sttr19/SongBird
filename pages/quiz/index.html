@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="../quiz/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../../assets/images/favicon.ico" rel="shortcut icon" />
+	<title>Quiz page</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="header__container">
+				<a class="logo header__logo" href="../start/index.html">
+					<h1 class="logo__text">Songbird</h1>
+				</a>
+				<p class="game__score">Score: <span class="game__score-num">0</span></p>
+				</nav>
+
+				<!-- <div class="burger">
+				<svg data-v-4d5437cc="" width="41" height="42" viewBox="0 0 41 42" xmlns="http://www.w3.org/2000/svg"
+					class="Header-menuIcon menu-icon AppSvg-component">
+					<path
+						d="M26 14.0012H8C-1.00025 14.0011 -3.59882 -1.1629 15.4997 1.6457C32.4998 4.14571 41.4999 6.14566 38.9999 23.6458C37.1888 36.3233 27.5001 29.9989 26 29L8 13">
+					</path>
+					<path
+						d="M25.8687 28.0076H7.86866C-1.1316 28.0077 -3.73016 43.1717 15.3683 40.3631C32.3685 37.8631 41.3685 35.8631 38.8685 18.363C37.0575 5.68547 27.5001 12.0011 26 13L7.86866 29">
+					</path>
+					<path d="M26 21H8"></path>
+				</svg>
+			</div> -->
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="wrapper">
+			<section class="game">
+				<ul class="game__pagination">
+					<li class="game__pagination-item game__pagination-item_active">Разминка</li>
+					<li class="game__pagination-item">Воробьиные</li>
+					<li class="game__pagination-item">Лесные птицы</li>
+					<li class="game__pagination-item">Певчие птицы</li>
+					<li class="game__pagination-item">Хищные птицы</li>
+					<li class="game__pagination-item">Морские птицы</li>
+				</ul>
+				<div class="game__current-animal">
+					<img class="game__current-animal-img" src="../../assets/images/secret-bird.jpg" alt="secret bird" />
+					<div class="game__current-animal-description">
+						<h3 class="game__current-animal-title">******</h3>
+						<audio class="game__current-animal-audio audio" controls
+							src="https://www.xeno-canto.org/sounds/uploaded/XIQVMQVUPP/XC518684-Grands%20corbeaux%2009012020%20Suzon.mp3"></audio>
+					</div>
+				</div>
+				<div class="game__box">
+					<ul class="game__list">
+						<li class="game__item" date-item="0">птица</li>
+						<li class="game__item" date-item="1">птица</li>
+						<li class="game__item" date-item="2">птица</li>
+						<li class="game__item" date-item="3">птица</li>
+						<li class="game__item" date-item="4">птица</li>
+						<li class="game__item" date-item="5">птица</li>
+					</ul>
+					<div class="instruction instruction_active">
+						<p class="instruction__text">Послушайте плеер.<br>
+							Выберите птицу из списка</p>
+					</div>
+					<div class="description-animal">
+						<div class="description-animal__top">
+							<img src="https://live.staticflickr.com//65535//49298804222_474cfe8682.jpg" alt=""
+								class="description-animal__img" />
+							<div class="description-animal__description">
+								<h3 class="description-animal__title">Воробей</h3>
+								<p class="description-animal__kind">Воробей</p>
+								<audio class="audio description-animal__audio" controls
+									src="https://www.xeno-canto.org/sounds/uploaded/XIQVMQVUPP/XC518684-Grands%20corbeaux%2009012020%20Suzon.mp3"></audio>
+							</div>
+						</div>
+						<p class="description-animal__text">
+							Сорока очень трудолюбивая птица. Она строит до восьми гнёзд, а
+							потом выбирает из них самое лучшее. Вход в гнездо сорок всегда
+							обращен на юг, чтобы в жилище было теплее. Сороки являются
+							единственными птицами, которые узнают себя в зеркале.
+						</p>
+					</div>
+				</div>
+				<div class="btn-start game__btn"><button href="../quiz/index.html">Следующий уровень</button></div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<ul class="footerUl">
+				<li><a href="https://github.com/sttr19"><img src="../../assets/images/github-icon.png" alt="github icon"
+							height="50"></a></li>
+				<li class="year">2022</li>
+				<li><a href="https://rs.school/js/"><img src="../../assets/images/rs-school-js-logo.png"
+							alt="rs school logo" height="50"></a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="../quiz/script.js" type="module"></script>
+</body>
+
+</html>
